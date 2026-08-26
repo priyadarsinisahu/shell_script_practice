@@ -1,6 +1,4 @@
-<<comment 
-Problem: Create a script that accepts a filename as an argument and checks whether the file exists. 
-comment 
+# Problem: Create a script that accepts a filename as an argument and checks whether the file exists. 
 
 #!/bin/bash
 
