@@ -17,8 +17,6 @@ else
     exit 1
 fi
 
-<<comment
-User input: ./check_file.sh practice_order.txt
-Expected output: File 'practice_order.txt' exists.
-Error output: Error: File 'practice_order.txt' does not exist.
+<<comment user input: ./check_file.sh practice_order.txt
+expected output: File 'practice_order.txt' exists.
 comment
