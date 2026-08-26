@@ -1,0 +1,37 @@
+I would prefer practicing shell scripting in this exact order:
+
+1.  File exists
+2.  Directory exists
+3.  Service check
+4.  Disk monitoring
+5.  User check
+6.  Process check
+7.  Log counter
+8.  IP analysis
+9.  CPU monitoring
+10. Memory monitoring
+
+        ↓
+
+11. Service auto restart
+12. Application health check
+13. Backup
+14. Backup retention
+15. Log cleanup
+16. Deployment script
+
+        ↓
+
+17. Server health check
+18. Docker monitoring
+19. Multi-server SSH
+20. Parallel server monitoring
+21. Secret scanner
+22. Dry-run cleanup
+
+        ↓
+
+23. Deployment + rollback
+24. CI/CD log analyzer
+25. AWS EC2 health checker
+26. Complete DevOps automation project
