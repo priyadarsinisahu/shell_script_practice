@@ -1,13 +1,14 @@
-<<comment
-Problem: Create a script that checks the disk usage of the root directory and displays a warning if it exceeds a certain threshold.
+#!/bin/bash
+
+<<info
+This script checks the disk usage of the root directory and displays a warning if it exceeds a certain threshold.
+
 RULES:
 < 70%        NORMAL
 70-85%       WARNING
 > 85%        CRITICAL   
-comment
+info
 
-
-#!/bin/bash
 
 USAGE=$( df / | awk 'NR==2 {print $5}' | tr -d '%' )
 
