@@ -1,6 +1,8 @@
-# Problem: Print numbers from 1 to 10
-
 #!/bin/bash
+
+<<info
+This shell script prints numbers from 1 to 20 showed in two approaches.
+info
 
 # approach 1: using a for loop
 
