@@ -1,6 +1,8 @@
-# Problem: Create a script that accepts a directory name as an argument and checks whether the directory exists. 
-
 #!/bin/bash
+
+<<info
+This shell script checks whether a directory exists by accepting the directory name as an argument.
+info
 
 if [ $# -ne 1 ]; 
 then
