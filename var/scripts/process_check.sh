@@ -1,6 +1,8 @@
-# Problem: Check whether a process is running by accepting a process name as an argument.
-
 #!/bin/bash
+
+<<info
+This shell script checks whether a process is running by accepting a process name as an argument.
+info
 
 PROCESS=$1
 
