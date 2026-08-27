@@ -1,8 +1,8 @@
-# Problem: Find top IP addresses from a log file
-
 #!/bin/bash
 
 <<info
+This shell script finds the top IP addresses from a log file.
+
 192.168.1.10 GET /login
 192.168.1.20 GET /home
 192.168.1.10 GET /home
