@@ -10,7 +10,6 @@
 192.168.1.20 GET /login
 info
 
-#!/bin/bash
 
 LOG_FILE=$1
 
