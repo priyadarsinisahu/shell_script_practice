@@ -1,6 +1,8 @@
-# Problem: Create a script that accepts a filename as an argument and checks whether the file exists. 
-
 #!/bin/bash
+
+<<info
+This shell script checks whether a file exists by accepting the filename as an argument.
+info
 
 if [ $# -ne 1 ]; then
     echo "Usage: $0 <filename>"
@@ -17,6 +19,7 @@ else
     exit 1
 fi
 
-<<comment user input: ./check_file.sh practice_order.txt
+<<comment
+user input: ./check_file.sh practice_order.txt
 expected output: File 'practice_order.txt' exists.
 comment
