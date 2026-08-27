@@ -1,6 +1,8 @@
-# Problem: Create a script that accepts a service name as an argument and checks whether the service is running.
-
 #!/bin/bash
+
+<<info
+This shell script checks whether a service is running by accepting service name as an argument.
+info
 
 if [ $# -ne 1 ]; 
 then
