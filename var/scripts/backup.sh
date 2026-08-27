@@ -1,6 +1,8 @@
-# Problem: Backup a dirctory
-
 #!/bin/bash
+
+<<info
+This script will take backup of a directory
+info
 
 if [ $# -ne 1 ]; then
     echo "Usage: $0 <directory_to_backup>"
