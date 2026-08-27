@@ -1,6 +1,8 @@
-# Problem: Find number of files in a directory and its subdirectories.
-
 #!/bin/bash
+
+<<info
+This shell script finds the number of files in a directory and its subdirectories.
+info
 
 if [ $# -ne 1 ]; then
     echo "Usage: $0 <directory>"
