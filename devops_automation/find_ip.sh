@@ -20,7 +20,9 @@ LOG_FILE=$1
 
 awk '{print $1}' "$LOG_FILE" | sort | uniq -c | sort -nr
 
-`````````````````````````````````````````````````````````````````
+# Extract column 1 → group identical values → count them → show most frequent first
+
+
 <<output
 3 192.168.1.10
 2 192.168.1.20
@@ -30,9 +32,8 @@ output
 # Key Concept: Extremely IMP pipeline for DevOps
 # awk → sort → uniq → sort
 
-# extract required data → sorts lines alphabetically/numerically → count adjacent duplicates → sort numerically (counts) in reverse (descending) order
 
 # extract the first column (IP addresses) from the log file
-# sort the IP addresses in ascending order
+# sort the IP addresses in ascending order (sorts lines alphabetically/numerically)
 # count the occurrences of each unique IP address (Count consecutive identical lines)
-# sort the counts in descending order to find the most frequently occurring IP addresses
+# sort numerically (counts) in reverse (descending) order to find the most frequently occurring IP addresses
