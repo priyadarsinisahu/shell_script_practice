@@ -1,6 +1,8 @@
-# Problem: Create a script that checks whether a user exists.
-
 #!/bin/bash
+
+<<info
+This shell script checks whether a user exists.
+info
 
 if [ $# -ne 1 ]; 
     then
