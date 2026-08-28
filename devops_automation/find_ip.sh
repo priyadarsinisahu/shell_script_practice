@@ -12,26 +12,23 @@ Given: access.log
 192.168.1.20 GET /login
 
 Find the most frequently occurring IP.
-
 info
 
 
 LOG_FILE=$1
 
-awk '{print $1}' "$LOG_FILE" | sort | uniq -c | sort -nr
+awk '{print $1}' "$LOG_FILE" | sort | uniq -c | sort -nr # | head -5
 
-# Extract column 1 → group identical values → count them → show most frequent first
 
+# Extract column 1 → group identical values → count them → show most frequent first → show top 5
 
 <<output
 3 192.168.1.10
 2 192.168.1.20
 output
 
-
 # Key Concept: Extremely IMP pipeline for DevOps
 # awk → sort → uniq → sort
-
 
 # extract the first column (IP addresses) from the log file
 # sort the IP addresses in ascending order (sorts lines alphabetically/numerically)
